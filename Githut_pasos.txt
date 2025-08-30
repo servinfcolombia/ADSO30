@@ -1,0 +1,15 @@
+Pasos para subir archivos a GitHub:
+
+1. Abre la terminal en la carpeta de tu proyecto.
+2. Inicializa el repositorio local:
+   git init
+3. Agrega todos los archivos al área de preparación:
+   git add .
+4. Realiza un commit con un mensaje:
+   git commit -m "Agregando archivos iniciales"
+5. Agrega el repositorio remoto de GitHub:
+   git remote add origin https://github.com/servinfcolombia/php_registar_leer_eliminar_editar.git
+6. Sube los archivos a la rama principal (usa main o master según corresponda):
+   git push -u origin main
+   o
+   git push -u origin master
