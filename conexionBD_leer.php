@@ -12,18 +12,15 @@ function conectarBD() {
     $dbuser = "root";
     $dbpass = "";
     $dbname = "usuario_php";
-
     $conn = new mysqli($host, $dbuser, $dbpass, $dbname);
-
     if ($conn->connect_error) {
         die("Error al conectar a la base de datos: " . $conn->connect_error);
     } else {
         echo "Conexión exitosa a la base de datos.";
     }
-
     return $conn;
 }
-conectarBD();
+//conectarBD();
 
 //consultar base de datos
 function consultarBD() {
@@ -73,6 +70,5 @@ $result = consultarBD();
         <?php endif; ?>
     </tbody>
 </table>
-?>
 </body>
 </html>
