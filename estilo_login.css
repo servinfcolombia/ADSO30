@@ -1,0 +1,196 @@
+/* estilo.css */
+/* Variables de diseño para consistencia */
+:root {
+  --primary-color: #3498db;
+  --primary-hover: #2980b9;
+  --success-color: #2ecc71;
+  --danger-color: #e74c3c;
+  --text-color: #2c3e50;
+  --border-color: #e0e0e0;
+  --light-gray: #f8f9fa;
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.1);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.15);
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --transition: all 0.25s ease;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6fa;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-top: 30px;
+    text-align: center;
+}
+
+form {
+    background: #fff;
+    max-width: 400px;
+    margin: 30px auto 20px auto;
+    padding: 30px 30px 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+}
+
+label {
+    font-weight: 600;
+    color: #34495e;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px 8px;
+    margin: 8px 0 18px 0;
+    border: 1px solid #bfc9d1;
+    border-radius: 4px;
+    font-size: 15px;
+    background: #f9fafb;
+    transition: border 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border: 1.5px solid #2980b9;
+    outline: none;
+}
+
+input[type="submit"],
+button[type="button"] {
+    background: #2980b9;
+    color: #fff;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: background 0.2s;
+}
+
+input[type="submit"]:hover,
+button[type="button"]:hover {
+    background: #1c5d8c;
+}
+
+a {
+    color: #2980b9;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+    border-radius: 8px;
+    overflow: hidden;
+    table-layout: fixed; /* Añadido para controlar el ancho de las columnas */
+}
+
+th, td {
+    padding: 12px 10px;
+    text-align: left;
+    word-wrap: break-word; /* Añadido para manejar contenido largo */
+}
+
+th {
+    background: #2980b9;
+    color: #fff;
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background: #f4f6fa;
+}
+
+tr:hover {
+    background: #eaf1fb;
+}
+
+/* Modificaciones para los formularios dentro de la tabla */
+td form {
+    display: inline-block; /* Cambiado de inline a inline-block */
+    margin: 0; /* Elimina márgenes no deseados */
+    padding: 0; /* Elimina rellenos no deseados */
+}
+
+/* Estilo específico para los botones dentro de la tabla */
+td form input[type="submit"],
+td form button[type="button"] {
+    margin: 2px; /* Reduce el margen entre botones */
+    padding: 8px 12px; /* Reduce el padding para hacer los botones más compactos */
+    font-size: 14px; /* Reduce ligeramente el tamaño de fuente */
+}
+
+div[style*="color:green"], div[style*="color:red"] {
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-align: center;
+}
+
+div[style*="color:green"] {
+    background: #eafaf1;
+    color: #27ae60 !important;
+    border: 1px solid #27ae60;
+}
+
+div[style*="color:red"] {
+    background: #faeaea;
+    color: #c0392b !important;
+    border: 1px solid #c0392b;
+}
+
+/* Estilos adicionales para el sistema de login */
+.login-message {
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.login-error {
+    background: #faeaea;
+    color: #c0392b;
+    border: 1px solid #c0392b;
+}
+
+.login-success {
+    background: #eafaf1;
+    color: #27ae60;
+    border: 1px solid #27ae60;
+}
+
+.logout-link {
+    display: inline-block;
+    margin-left: 15px;
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.logout-link:hover {
+    text-decoration: underline;
+}
+
+.welcome-message {
+    text-align: right;
+    margin: 10px 5%;
+    color: #2c3e50;
+    font-weight: 600;
+}

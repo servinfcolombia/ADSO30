@@ -7,7 +7,11 @@
 </head>
 <body>
 <?php
-// La función conectarBD() establece la conexión con la base de datos MySQL y retorna el objeto de conexión.
+
+/**
+ * Establece la conexión con la base de datos MySQL.
+ * @return conn Objeto de conexión a la base de datos.
+ */
 function conectarBD() {
     $host = "localhost";
     $dbuser = "root";
@@ -21,7 +25,11 @@ function conectarBD() {
 }
 
 
-// La función consultarBD() realiza una consulta SQL para obtener los usuarios registrados y retorna el resultado.
+/**
+ * Realiza una consulta SQL para obtener los usuarios registrados.
+ * @return result Resultado de la consulta SQL.
+ * @name consultarBD
+ */
 function consultarBD() {
     $conn = conectarBD();
     // Consulta para obtener los usuarios registrados
@@ -37,6 +45,7 @@ function consultarBD() {
 }
 $result = consultarBD();
 ?>
+
 
 <!-- Formulario de registro de usuarios -->
 <H1>Formulario de registro 2025</H1>
